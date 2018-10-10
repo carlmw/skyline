@@ -60,7 +60,7 @@
     "All Structures": 370
   },
   {
-    "id": 17,
+    "id": 18,
     "City": "Toronto",
     "Country": "Canada",
     "All Buildings": 487,
@@ -84,7 +84,7 @@
     "All Structures": 381
   },
   {
-    "id": 29,
+    "id": 30,
     "City": "Moscow",
     "Country": "Russia",
     "All Buildings": 204,
@@ -192,7 +192,7 @@
     "All Structures": 211
   },
   {
-    "id": 23,
+    "id": 24,
     "City": "Miami",
     "Country": "United States",
     "All Buildings": 124,
@@ -276,7 +276,7 @@
     "All Structures": 81
   },
   {
-    "id": 23,
+    "id": 25,
     "City": "Mumbai",
     "Country": "India",
     "All Buildings": 124,
@@ -408,7 +408,7 @@
     "All Structures": 100
   },
   {
-    "id": 54,
+    "id": 55,
     "City": "Calgary",
     "Country": "Canada",
     "All Buildings": 90,
@@ -420,7 +420,7 @@
     "All Structures": 91
   },
   {
-    "id": 68,
+    "id": 69,
     "City": "Brisbane",
     "Country": "Australia",
     "All Buildings": 97,
