@@ -1,6 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const TABLE_DATA_PROP_TYPE = PropTypes.shape({
+  columns: PropTypes.arrayOf(PropTypes.string),
+  rows: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      cells: PropTypes.arrayOf(
+        PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      ),
+    }),
+  ),
+});
+
 const renderRow = ({ id, cells }) => (
   <tr key={id}>{cells.map((cell, i) => <td key={i}>{cell}</td>)}</tr>
 );
@@ -36,17 +48,7 @@ const CitiesTable = ({ loading = false, error = null, data = null }) => {
 CitiesTable.propTypes = {
   loading: PropTypes.bool,
   error: PropTypes.instanceOf(Error),
-  data: PropTypes.shape({
-    columns: PropTypes.arrayOf(PropTypes.string),
-    rows: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number,
-        cells: PropTypes.arrayOf(
-          PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-        ),
-      }),
-    ),
-  }),
+  data: TABLE_DATA_PROP_TYPE,
 };
 
-export default CitiesTable;
+export { CitiesTable as default, TABLE_DATA_PROP_TYPE as tableDataPropType };
