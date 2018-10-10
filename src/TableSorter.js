@@ -23,7 +23,6 @@ class TableSorter extends PureComponent {
 
   render() {
     const { children, orderBy, ...props } = this.props;
-
     let { data } = this.props;
 
     if (data && orderBy) {

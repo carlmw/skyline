@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 const TABLE_DATA_PROP_TYPE = PropTypes.shape({
   columns: PropTypes.arrayOf(PropTypes.string),
@@ -36,7 +37,11 @@ const CitiesTable = ({ loading = false, error = null, data = null }) => {
     <table>
       <thead>
         <tr>
-          {columns.map((column, i) => <th key={i}>{column}</th>)}
+          {columns.map((column, i) => (
+            <th key={i}>
+              <Link to={`/orderBy/${column}`}>{column}</Link>
+            </th>)
+          )}
         </tr>
       </thead>
       <tbody>

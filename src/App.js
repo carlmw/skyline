@@ -1,23 +1,13 @@
-import React, { PureComponent } from 'react';
-import TableDataSource from './TableDataSource';
-import Table from './Table';
+import React from 'react';
+import CitiesTablePage from './CitiesTablePage';
+import { BrowserRouter, Route } from "react-router-dom";
 
-class App extends PureComponent {
-  fetchData() {
-    return fetch('/cities.json').then(response => response.json());
-  }
-
-  renderTable(props) {
-    return <Table {...props} />
-  }
-
-  render() {
-    return (
-      <TableDataSource onInit={this.fetchData}>
-        {this.renderTable}
-      </TableDataSource>
-    );
-  }
-}
+const App = () => (
+  <BrowserRouter>
+    <Route path='/orderBy/:orderBy'>
+      {({ match }) => <CitiesTablePage params={match && match.params} />}
+    </Route>
+  </BrowserRouter>
+);
 
 export default App;

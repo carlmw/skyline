@@ -25,27 +25,52 @@ exports[`<Table /> renders rows when we have data 1`] = `
       <th
         key="0"
       >
-        id
+        <Link
+          replace={false}
+          to="/orderBy/id"
+        >
+          id
+        </Link>
       </th>
       <th
         key="1"
       >
-        City
+        <Link
+          replace={false}
+          to="/orderBy/City"
+        >
+          City
+        </Link>
       </th>
       <th
         key="2"
       >
-        Country
+        <Link
+          replace={false}
+          to="/orderBy/Country"
+        >
+          Country
+        </Link>
       </th>
       <th
         key="3"
       >
-        All Buildings
+        <Link
+          replace={false}
+          to="/orderBy/All Buildings"
+        >
+          All Buildings
+        </Link>
       </th>
       <th
         key="4"
       >
-        100m+
+        <Link
+          replace={false}
+          to="/orderBy/100m+"
+        >
+          100m+
+        </Link>
       </th>
     </tr>
   </thead>
