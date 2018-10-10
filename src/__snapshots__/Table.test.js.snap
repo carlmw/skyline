@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Table /> displays a no results message when there is no data 1`] = `
+<div>
+  No results to display
+</div>
+`;
+
+exports[`<Table /> has a loading state 1`] = `
+<div>
+  Loading...
+</div>
+`;
+
+exports[`<Table /> has an error state 1`] = `
+<div>
+  Error: Failed to load data
+</div>
+`;
+
+exports[`<Table /> renders rows when we have data 1`] = `
+<table>
+  <thead>
+    <tr>
+      <th
+        key="0"
+      >
+        id
+      </th>
+      <th
+        key="1"
+      >
+        City
+      </th>
+      <th
+        key="2"
+      >
+        Country
+      </th>
+      <th
+        key="3"
+      >
+        All Buildings
+      </th>
+      <th
+        key="4"
+      >
+        100m+
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      key="2"
+    >
+      <td
+        key="0"
+      >
+        2
+      </td>
+      <td
+        key="1"
+      >
+        New York City
+      </td>
+      <td
+        key="2"
+      >
+        United States
+      </td>
+      <td
+        key="3"
+      >
+        1390
+      </td>
+      <td
+        key="4"
+      >
+        803
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
